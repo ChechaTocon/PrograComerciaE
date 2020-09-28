@@ -7,6 +7,7 @@
                 {{ publicacion.fecha_publicacion }}
             </div>
         {% endif %}
+        <a class="btn btn-default" href="{% url 'publicacion_editar' pk=publicacion.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h2>{{ publicacion.titulo }}</h2>
         <p>{{ publicacion.texto|linebreaksbr }}</p>
     </div>
