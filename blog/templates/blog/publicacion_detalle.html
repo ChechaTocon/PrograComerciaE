@@ -5,7 +5,9 @@
         {% if publicacion.fecha_publicacion%}
             <div class="date">
                 {{ publicacion.fecha_publicacion }}
-            </div>
+            </div>            
+            {% else %}
+    <a class="btn btn-default" href="{% url 'publicacion_publicar' pk=publicacion.pk %}">Publicar</a>
         {% endif %}
         <a class="btn btn-default" href="{% url 'publicacion_editar' pk=publicacion.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h2>{{ publicacion.titulo }}</h2>
