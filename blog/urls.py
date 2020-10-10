@@ -10,4 +10,5 @@ urlpatterns = [
     path('publicacion/<int:pk>/editar/', views.publicacion_editar, name='publicacion_editar'),
     path('publicacion/borrador/lista', views.publicacion_borrador_lista, name='publicacion_borrador_lista'),
     path('publicacion/<int:pk>/publicar/', views.publicacion_publicar, name='publicacion_publicar'),
+    path('publicacion/<int:pk>/borrar/', views.publicacion_borrar, name='publicacion_borrar'),
 ]

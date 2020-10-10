@@ -60,3 +60,9 @@ def publicacion_publicar(request, pk):
     publicacion = get_object_or_404(Publicacion, pk=pk)
     publicacion.publicar()
     return redirect('detalle_publicacion', pk=pk)
+
+@login_required
+def publicacion_borrar(request, pk):
+    publicacion = get_object_or_404(Publicacion, pk=pk)
+    publicacion.delete()
+    return redirect('publicacion_lista')

@@ -10,6 +10,7 @@
     <a class="btn btn-default" href="{% url 'publicacion_publicar' pk=publicacion.pk %}">Publicar</a>
         {% endif %}
         <a class="btn btn-default" href="{% url 'publicacion_editar' pk=publicacion.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <a class="btn btn-default" href="{% url 'publicacion_borrar' pk=publicacion.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
         <h2>{{ publicacion.titulo }}</h2>
         <p>{{ publicacion.texto|linebreaksbr }}</p>
     </div>
