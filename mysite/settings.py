@@ -25,7 +25,7 @@ SECRET_KEY = 'd0gy99l*(k!zh08%s0p^zce7xo5)2kqaru0guk-co(po1+@@93'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'chechatocon.pyhtonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'chechatocon.pythonanywhere.com']
 
 
 # Application definition
