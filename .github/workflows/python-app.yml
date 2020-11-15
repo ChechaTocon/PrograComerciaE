@@ -27,4 +27,6 @@ jobs:
     - name: Run migrations
       run: |
         python manage.py makemigrations
-        python manage.py migrate  
+        python manage.py migrate
+    - name: Run tests
+      run: python manage.py test blog.tests.test_models.PublicacionModelTest
